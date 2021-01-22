@@ -1,10 +1,6 @@
 import React from 'react';
-import styled from 'styled-components';
 import Header from '../Header/Header';
-
-const StyledRegisterCard = styled.div `
-
-`
+import StyledRegisterCard from './StyledRegisterCard'
 
 const RegisterCard = () =>{
     return(

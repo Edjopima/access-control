@@ -19,17 +19,17 @@ function App() {
     <StyledApp>
       <Router>
         <Switch>
-          <Route path="/signin">
-            <Signin/>
-          </Route>
           <Route path='/registeruser'>
             <RegisterUser/>
           </Route>
           <Route path='/registercard'>
             <RegisterCard/>
           </Route>
-          <Route path='/'>
+          <Route path='/home'>
             <Home/>
+          </Route>
+          <Route path="/">
+            <Signin/>
           </Route>
         </Switch>
       </Router>
