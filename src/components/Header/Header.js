@@ -12,7 +12,7 @@ const Header = () =>{
 
     return(
         <StyledHeader>
-            <img width='50px' height='50px'  className='Header-logo' />
+            <img width='50px' height='50px'  className='Header-logo' alt='logo'/>
             <p className='Header-item' onClick={()=>changeRoute('/home')} >Control de Acceso</p>
             <p className='Header-item' onClick={()=>changeRoute('/registeruser')} >Registrar Usuario</p>
             <p className='Header-item' onClick={()=>changeRoute('/registercard')} >Registrar Tarjeta</p>

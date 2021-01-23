@@ -9,6 +9,7 @@ import Signin from '../components/Signin/Signin'
 import Home from '../components/Home/Home'
 import RegisterCard from '../components/RegisterCard/RegisterCard'
 import RegisterUser from '../components/RegisterUser/RegisterUser'
+import RoomPage from '../components/RoomPage/RoomPage'
 
 const StyledApp = styled.div `
 
@@ -27,6 +28,9 @@ function App() {
           </Route>
           <Route path='/home'>
             <Home/>
+          </Route>
+          <Route path='/room'>
+            <RoomPage/>
           </Route>
           <Route path="/">
             <Signin/>

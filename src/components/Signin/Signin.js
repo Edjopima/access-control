@@ -10,7 +10,24 @@ const Signin = () =>{
 
     const handleSignin = () => {
         console.log(user,password);
-        history.push('/home')
+        fetch('http://127.0.0.1:4000/signin',{
+            method:'POST',
+            headers:{
+                Accept:'application/json',
+                'Content-Type':'application/json'
+            },
+            body: JSON.stringify({
+                user,
+                password
+            })})
+            .then(response=>response.json())
+            .then(user=>{
+                console.log(user)
+                if (user.id){
+                    history.push('/home')
+                }
+            })
+            .catch(error=>{console.log(error)})
     }
 
     return(
